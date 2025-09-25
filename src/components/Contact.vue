@@ -42,7 +42,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold">Email</h4>
-                                    <p class="text-slate-300">hello@yourportfolio.com</p>
+                                    <p class="text-slate-300">mlukmanhkaim901@gmail.com</p>
                                 </div>
                             </div>
                             
@@ -52,7 +52,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold">Location</h4>
-                                    <p class="text-slate-300">San Francisco, CA</p>
+                                    <p class="text-slate-300">Selangor, MY</p>
                                 </div>
                             </div>
                             
@@ -63,17 +63,12 @@
                                 <div>
                                     <h4 class="font-bold">Social Media</h4>
                                     <div class="flex space-x-4 mt-2">
-                                        <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                                        <a href="https://github.com/vezzil/" target="_blank" class="text-slate-400 hover:text-white transition-colors">
                                             <i class="fab fa-github text-xl"></i>
                                         </a>
-                                        <a href="#" class="text-slate-400 hover:text-white transition-colors">
-                                            <i class="fab fa-twitter text-xl"></i>
-                                        </a>
-                                        <a href="#" class="text-slate-400 hover:text-white transition-colors">
+
+                                        <a href="https://www.linkedin.com/in/lukman-hakim-7085a61b8/" target="_blank" class="text-slate-400 hover:text-white transition-colors">
                                             <i class="fab fa-linkedin text-xl"></i>
-                                        </a>
-                                        <a href="#" class="text-slate-400 hover:text-white transition-colors">
-                                            <i class="fab fa-discord text-xl"></i>
                                         </a>
                                     </div>
                                 </div>
