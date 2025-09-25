@@ -17,14 +17,10 @@ const techColors = [
 
 <template>
   <div class="project-card gradient-border p-1">
-    <div class="bg-slate-800 p-6 rounded-md h-full flex flex-col">
-      
+    <div class="bg-slate-800 p-6 rounded-md flex flex-col">
       <!-- Thumbnail -->
       <div class="h-48 mb-4 overflow-hidden rounded-md bg-slate-700 flex items-center justify-center">
-        <!-- Show project image if available -->
         <img v-if="image" :src="image" alt="Project image" class="w-full h-full object-cover" />
-
-        <!-- Fallback SVG -->
         <svg v-else class="w-full h-full" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="project1-bg" x1="0%" y1="0%" x2="100%" y2="100%">
