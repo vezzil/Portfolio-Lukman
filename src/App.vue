@@ -6,10 +6,11 @@ import Project from './components/Project/Project.vue'
 import Skills from './components/Skills.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
+import Background from './components/Background.vue'
 </script>
 
 <template>
-
+  <Background>
     <Navbar />
     <Hero />
     <About />
@@ -17,4 +18,5 @@ import Footer from './components/Footer.vue'
     <Skills />
     <Contact />
     <Footer />
+  </Background>
 </template>
