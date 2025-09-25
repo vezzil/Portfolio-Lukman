@@ -12,7 +12,7 @@ import SocialMedia from './SocialMediaButtons/SocialMedia.vue';
                         <div class="hexagon bg-gradient-to-r from-indigo-500 to-emerald-500 w-8 h-8 flex items-center justify-center">
                             <span class="font-bold text-white text-xs">YP</span>
                         </div>
-                        <span class="font-bold">Your<span class="gradient-text">Portfolio</span></span>
+                        <span class="font-bold">Lukman<span class="gradient-text">Hakim</span></span>
                     </div>
                 </div>
                 
