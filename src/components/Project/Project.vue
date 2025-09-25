@@ -26,6 +26,8 @@ const projects = [
   },
 ]
 
+const ProjectParagraph = "Explore my backend-focused and full-stack projects, showcasing efficient APIs, scalable architectures, and modern web applications built with Golang, Vue.js, React.js, and Redis."
+
 const onViewMore = () => {
   alert('This would load more projects in a real portfolio.')
 }
@@ -41,8 +43,7 @@ const onViewMore = () => {
         </h2>
         <div class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-emerald-500 mx-auto"></div>
         <p class="mt-4 text-slate-300 max-w-2xl mx-auto">
-          Explore my latest work spanning Web3, decentralized applications, and modern web
-          experiences.
+          {{ ProjectParagraph }}
         </p>
       </div>
 

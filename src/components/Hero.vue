@@ -1,5 +1,10 @@
 <script setup>
+import SocialMedia from './SocialMediaButtons/SocialMedia.vue';
+
+const heroTitle = ["Building the ", "Future", " of Web"]
+const heroDescription = "Full-stack developer specializing in Web3 technologies, creating decentralized applications and immersive digital experiences."
 </script>
+
 
 <template>
   <!-- Hero Section -->
@@ -8,11 +13,12 @@
       <div class="flex flex-col md:flex-row items-center">
         <div class="md:w-1/2 mb-10 md:mb-0">
           <h1 class="text-4xl md:text-6xl font-bold mb-4">
-            Building the <span class="gradient-text">Future</span> of Web
+            {{ heroTitle[0] }}
+            <span class="gradient-text">{{ heroTitle[1] }}</span>
+            {{ heroTitle[2] }}
           </h1>
           <p class="text-xl text-slate-300 mb-8">
-            Full-stack developer specializing in Web3 technologies, creating decentralized
-            applications and immersive digital experiences.
+            {{ heroDescription }}
           </p>
           <div class="flex flex-wrap gap-4">
             <a href="#projects" class="gradient-border glow px-6 py-3 font-medium">
@@ -27,18 +33,8 @@
           </div>
 
           <div class="mt-12 flex items-center space-x-6">
-            <a href="#" class="text-slate-400 hover:text-white transition-colors">
-              <i class="fab fa-github text-2xl"></i>
-            </a>
-            <a href="#" class="text-slate-400 hover:text-white transition-colors">
-              <i class="fab fa-twitter text-2xl"></i>
-            </a>
-            <a href="#" class="text-slate-400 hover:text-white transition-colors">
-              <i class="fab fa-linkedin text-2xl"></i>
-            </a>
-            <a href="#" class="text-slate-400 hover:text-white transition-colors">
-              <i class="fab fa-discord text-2xl"></i>
-            </a>
+            <SocialMedia url="https://github.com/vezzil/" iconClass="fab fa-github" iconSize="text-2xl"/>
+            <SocialMedia url="https://www.linkedin.com/in/lukman-hakim-7085a61b8/" iconClass="fab fa-linkedin" iconSize="text-2xl"/>
           </div>
         </div>
 

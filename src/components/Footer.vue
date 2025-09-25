@@ -1,4 +1,5 @@
 <script setup>
+import SocialMedia from './SocialMediaButtons/SocialMedia.vue';
 </script>
 
 <template>
@@ -24,23 +25,13 @@
                 </div>
                 
                 <div class="flex space-x-6">
-                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
-                        <i class="fab fa-discord"></i>
-                    </a>
+                    <SocialMedia url="https://github.com/vezzil/" iconClass="fab fa-github" iconSize=""/>
+                    <SocialMedia url="https://www.linkedin.com/in/lukman-hakim-7085a61b8/" iconClass="fab fa-linkedin" iconSize=""/>
                 </div>
             </div>
             
             <div class="text-center mt-8 text-slate-400 text-sm">
-                <p>&copy; 2023 YourPortfolio. All rights reserved.</p>
+                <p>&copy; 2025 Mohamad Lukman Hakim Mohamad Hanif. All rights reserved.</p>
             </div>
         </div>
     </footer>

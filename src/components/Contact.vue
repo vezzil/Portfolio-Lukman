@@ -1,5 +1,6 @@
 <script setup>
  import { ref } from 'vue'
+ import SocialMedia from './SocialMediaButtons/SocialMedia.vue';
 
  const name = ref('')
  const email = ref('')
@@ -63,13 +64,8 @@
                                 <div>
                                     <h4 class="font-bold">Social Media</h4>
                                     <div class="flex space-x-4 mt-2">
-                                        <a href="https://github.com/vezzil/" target="_blank" class="text-slate-400 hover:text-white transition-colors">
-                                            <i class="fab fa-github text-xl"></i>
-                                        </a>
-
-                                        <a href="https://www.linkedin.com/in/lukman-hakim-7085a61b8/" target="_blank" class="text-slate-400 hover:text-white transition-colors">
-                                            <i class="fab fa-linkedin text-xl"></i>
-                                        </a>
+                                        <SocialMedia url="https://github.com/vezzil/" iconClass="fab fa-github" iconSize="text-xl"/>
+                                        <SocialMedia url="https://www.linkedin.com/in/lukman-hakim-7085a61b8/" iconClass="fab fa-linkedin" iconSize="text-xl"/>
                                     </div>
                                 </div>
                             </div>
