@@ -1,157 +1,131 @@
-/* Custom CSS Variables */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+        
+.fade-in-hidden {
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in-show {
+opacity: 1;
+transform: translateY(0);
+}
+
 :root {
-  --primary: #6366f1;
-  --secondary: #10b981;
-  --dark: #0f172a;
-  --light: #f8fafc;
-  --accent: #f43f5e;
+    --primary: #6366f1;
+    --secondary: #10b981;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --accent: #f43f5e;
 }
 
-/* Base Styles */
 body {
-  font-family: 'Space Grotesk', sans-serif;
-  background-color: var(--dark);
-  color: var(--light);
-  overflow-x: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    overflow-x: hidden;
 }
 
-/* Gradient Text */
 .gradient-text {
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
-/* Gradient Border */
 .gradient-border {
-  position: relative;
-  border-radius: 0.5rem;
-  background: var(--dark);
+    position: relative;
+    border-radius: 0.5rem;
+    background: var(--dark);
 }
 
 .gradient-border::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 0.5rem;
-  padding: 1px;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: -2px;
+    z-index: -1;
+    border-radius: 0.6rem;
+    background: linear-gradient(45deg, var(--primary), var(--secondary), var(--accent));
+    animation: border-animation 4s linear infinite;
 }
 
-/* Fade In Animation */
-.fade-in-hidden {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+@keyframes border-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.fade-in-show {
-  opacity: 1;
-  transform: translateY(0);
+.glow {
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
 }
 
-/* Background Elements */
 .grid-bg {
-  background-color: var(--dark);
-  background-image: 
-    linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px);
-  background-size: 40px 40px;
-  position: relative;
+    background-image: radial-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
 }
 
 .blur-bg {
-  position: fixed;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.2;
-  z-index: -1;
-  animation: float 15s ease-in-out infinite;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.2;
+    z-index: -1;
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0) translateX(0);
-  }
-  50% {
-    transform: translateY(-20px) translateX(20px);
-  }
-}
-
-/* Skill Pills */
-.skill-pill {
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-}
-
-.skill-pill:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Project Card Hover Effects */
 .project-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
-/* Form Inputs */
-.form-input {
-  background-color: rgba(30, 41, 59, 0.5);
-  border: 1px solid rgba(99, 102, 241, 0.3);
-  color: white;
-  transition: all 0.3s ease;
+.nav-link {
+    position: relative;
 }
 
-.form-input:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: width 0.3s ease;
 }
 
-/* Buttons */
-.btn-primary {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: white;
-  font-weight: 600;
-  padding: 0.75rem 2rem;
-  border-radius: 0.375rem;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
+.nav-link:hover::after {
+    width: 100%;
 }
 
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+.active-nav::after {
+    width: 100%;
 }
 
-/* Section Headers */
-.section-header {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 1rem;
+.hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
-.section-header::after {
-  content: '';
-  position: absolute;
-  bottom: -0.5rem;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+.skill-pill {
+    transition: all 0.3s ease;
+}
+
+.skill-pill:hover {
+    transform: scale(1.05);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--primary), var(--secondary));
+    border-radius: 4px;
 }
