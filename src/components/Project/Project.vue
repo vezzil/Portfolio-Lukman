@@ -25,6 +25,10 @@ const projects = [
     link: 'https://myblog.com',
   },
 ]
+
+const onViewMore = () => {
+  alert('This would load more projects in a real portfolio.')
+}
 </script>
 
 <template>
@@ -57,6 +61,7 @@ const projects = [
         <button
           id="view-more-btn"
           class="border border-slate-700 hover:border-indigo-500 px-6 py-3 font-medium transition-colors"
+          @click="onViewMore"
         >
           View More Projects
         </button>

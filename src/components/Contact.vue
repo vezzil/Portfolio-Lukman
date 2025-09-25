@@ -1,4 +1,22 @@
 <script setup>
+ import { ref } from 'vue'
+
+ const name = ref('')
+ const email = ref('')
+ const subject = ref('')
+ const message = ref('')
+
+ const onSubmit = () => {
+   if (name.value && email.value && subject.value && message.value) {
+     alert('Thank you for your message! This is a demo form.')
+     name.value = ''
+     email.value = ''
+     subject.value = ''
+     message.value = ''
+   } else {
+     alert('Please fill in all fields.')
+   }
+ }
 </script>
 
 <template>
@@ -65,26 +83,26 @@
                 </div>
                 
                 <div class="md:w-1/2">
-                    <form id="contact-form" class="gradient-border p-1">
+                    <form class="gradient-border p-1" @submit.prevent="onSubmit">
                         <div class="bg-slate-800 p-6 rounded-md">
                             <div class="mb-6">
                                 <label for="name" class="block mb-2 font-medium">Name</label>
-                                <input type="text" id="name" class="w-full bg-slate-700 border border-slate-600 rounded-md px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Your name">
+                                <input type="text" id="name" v-model="name" class="w-full bg-slate-700 border border-slate-600 rounded-md px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Your name">
                             </div>
                             
                             <div class="mb-6">
                                 <label for="email" class="block mb-2 font-medium">Email</label>
-                                <input type="email" id="email" class="w-full bg-slate-700 border border-slate-600 rounded-md px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Your email">
+                                <input type="email" id="email" v-model="email" class="w-full bg-slate-700 border border-slate-600 rounded-md px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Your email">
                             </div>
                             
                             <div class="mb-6">
                                 <label for="subject" class="block mb-2 font-medium">Subject</label>
-                                <input type="text" id="subject" class="w-full bg-slate-700 border border-slate-600 rounded-md px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Subject">
+                                <input type="text" id="subject" v-model="subject" class="w-full bg-slate-700 border border-slate-600 rounded-md px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Subject">
                             </div>
                             
                             <div class="mb-6">
                                 <label for="message" class="block mb-2 font-medium">Message</label>
-                                <textarea id="message" rows="5" class="w-full bg-slate-700 border border-slate-600 rounded-md px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Your message"></textarea>
+                                <textarea id="message" v-model="message" rows="5" class="w-full bg-slate-700 border border-slate-600 rounded-md px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Your message"></textarea>
                             </div>
                             
                             <button type="submit" class="w-full bg-gradient-to-r from-indigo-500 to-emerald-500 text-white font-medium py-3 px-4 rounded-md hover:opacity-90 transition-opacity">
