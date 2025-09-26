@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://github.com/vezzil/",
+    "iconClass": "fab fa-github",
+    "iconSize": "text-2xl"
+  },
+  {
+    "url": "https://www.linkedin.com/in/lukman-hakim-7085a61b8/",
+    "iconClass": "fab fa-linkedin",
+    "iconSize": "text-2xl"
+  }
+]

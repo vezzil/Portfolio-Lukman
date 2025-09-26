@@ -1,31 +1,8 @@
 <script setup>
-const journeyParagraphs = [
-  "I'm a back-end focused software developer with 2 years of experience in building scalable systems and optimizing performance. I specialize in Golang, API development, and delivering efficient back-end solutions for high-traffic applications.",
-  "Throughout my career, I have developed various systems including project management tools, haulage management platforms, and marketplace applications, improving efficiency through database optimization, caching, and workflow automation.",
-  "I am passionate about continuous learning and collaboration, contributing to open-source projects, exploring emerging technologies, and applying best practices in system design, microservices, and cloud infrastructure."
-];
+import experienceData from '../dataset/experienceeducation.json'
 
-// AboutSectionData.js or inside <script setup>
-const experienceEducation = [
-  {
-    title: "Junior Backend Developer L2",
-    company: "PROTEUS DT Sdn.Bhd",
-    period: "Nov 2023 – July 2025",
-  },
-  {
-    title: "Software Engineer Internship/Contract",
-    company: "ABS Innovations Sdn.Bhd",
-    period: "March 2023 – Oct 2023",
-  },
-  {
-    title: "Bachelor of Information Technology (Hons)",
-    company: "Universiti Teknologi MARA (UiTM) Shah Alam",
-    period: "March 2021 – June 2023",
-    description: [
-      "Graduated with CGPA: 3.44."
-    ]
-  }
-];
+const journeyParagraphs = experienceData.journey
+const experienceEducation = experienceData.experienceEducation
 
 </script>
 

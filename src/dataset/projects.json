@@ -1,0 +1,52 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Portfolio Website",
+        "description": "Personal portfolio built with Vue and Tailwind.",
+        "technologies": ["Vue.js", "Tailwind CSS", "Golang", "Redis"],
+        "category": "Full-stack Web",
+        "liveDemo": "https://portfolio-website.com",
+        "sourceCode": "https://github.com/vezzil/portfolio-website",
+        "image": "portfolio1.PNG"
+      },
+      {
+        "id": 2,
+        "title": "E-commerce Store",
+        "description": "Full-stack e-commerce store with cart & checkout.",
+        "technologies": ["Vue.js", "Tailwind CSS"],
+        "category": "Full-stack Web",
+        "liveDemo": "",
+        "sourceCode": "https://github.com/vezzil/ecommerce-store",
+        "image": "portfolio2.PNG"
+      },
+      {
+        "id": 3,
+        "title": "Crypto Wallet",
+        "description": "Web3 wallet with Ethers.js integration.",
+        "technologies": ["React.js", "Ethers.js", "IPFS"],
+        "category": "Blockchain / Web3",
+        "liveDemo": "",
+        "sourceCode": "https://github.com/vezzil/crypto-wallet",
+        "image": "portfolio3.PNG"
+      },
+      {
+        "id": 4,
+        "title": "Utility Script",
+        "description": "CLI tool to automate backups.",
+        "technologies": ["Golang", "CLI"],
+        "category": "Other / Utilities",
+        "liveDemo": "",
+        "sourceCode": "https://github.com/vezzil/backup-script",
+        "image": "portfolio4.PNG"
+      }
+    ],
+    "categories": [
+      "All",
+      "Full-stack Web",
+      "Full-stack Mobile",
+      "Blockchain / Web3",
+      "Other / Utilities"
+    ]
+  }
+  

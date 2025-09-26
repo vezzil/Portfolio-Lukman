@@ -1,6 +1,7 @@
 <script setup>
  import { ref } from 'vue'
  import SocialMedia from './SocialMediaButtons/SocialMedia.vue';
+ import socialLinks from '../dataset/socialmedia.json'
 
  const name = ref('')
  const email = ref('')
@@ -64,8 +65,13 @@
                                 <div>
                                     <h4 class="font-bold">Social Media</h4>
                                     <div class="flex space-x-4 mt-2">
-                                        <SocialMedia url="https://github.com/vezzil/" iconClass="fab fa-github" iconSize="text-xl"/>
-                                        <SocialMedia url="https://www.linkedin.com/in/lukman-hakim-7085a61b8/" iconClass="fab fa-linkedin" iconSize="text-xl"/>
+                                        <SocialMedia
+                                            v-for="(social, index) in socialLinks"
+                                            :key="index"
+                                            :url="social.url"
+                                            :iconClass="social.iconClass"
+                                            :iconSize="social.iconSize"
+                                        />
                                     </div>
                                 </div>
                             </div>

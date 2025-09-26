@@ -1,8 +1,11 @@
 <script setup>
 import SocialMedia from './SocialMediaButtons/SocialMedia.vue';
+import heroData from '../dataset/hero.json'
+import socialLinks from '../dataset/socialmedia.json'
 
-const heroTitle = ["Building the ", "Future", " of Web"]
-const heroDescription = "Back-end focused software developer with 2 years of experience in Golang, API development, and system optimization, delivering scalable and efficient solutions for high-traffic applications."
+const heroTitle = heroData.title
+const heroDescription = heroData.description
+
 </script>
 
 
@@ -33,8 +36,13 @@ const heroDescription = "Back-end focused software developer with 2 years of exp
           </div>
 
           <div class="mt-12 flex items-center space-x-6">
-            <SocialMedia url="https://github.com/vezzil/" iconClass="fab fa-github" iconSize="text-2xl"/>
-            <SocialMedia url="https://www.linkedin.com/in/lukman-hakim-7085a61b8/" iconClass="fab fa-linkedin" iconSize="text-2xl"/>
+            <SocialMedia
+              v-for="(social, index) in socialLinks"
+              :key="index"
+              :url="social.url"
+              :iconClass="social.iconClass"
+              :iconSize="social.iconSize"
+            />
           </div>
         </div>
 
@@ -42,19 +50,13 @@ const heroDescription = "Back-end focused software developer with 2 years of exp
           <div class="relative">
             <div class="gradient-border p-1 rounded-full">
               <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                  <defs>
-                    <linearGradient id="avatar-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#6366f1" />
-                      <stop offset="100%" stop-color="#10b981" />
-                    </linearGradient>
-                  </defs>
-                  <path :fill="'url(#avatar-gradient)'" d="M48.8,-57.2C62.9,-44.5,74.2,-28.9,76.9,-11.7C79.7,5.5,73.9,24.4,62.4,38.5C50.9,52.7,33.7,62.1,15.2,67.2C-3.3,72.3,-23.1,73.1,-39.9,65.2C-56.7,57.3,-70.5,40.7,-76.3,21.3C-82.1,1.9,-79.9,-20.3,-69.4,-37.1C-58.9,-53.9,-40.1,-65.3,-22.1,-70.1C-4.1,-74.9,13.1,-73.1,29.4,-67.1C45.7,-61.1,61.1,-50.9,48.8,-57.2Z" transform="translate(100 100)" />
-                  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="60" font-weight="bold">YP</text>
-                </svg>
+                <img 
+                  src="/profilepic.png" 
+                  alt="Profile Picture" 
+                  class="w-full h-full object-cover rounded-full"
+                />
               </div>
             </div>
-
             <div class="absolute -bottom-4 -right-4 bg-slate-900 px-4 py-2 rounded-full border border-slate-700">
               <span class="flex items-center">
                 <span class="h-3 w-3 bg-green-500 rounded-full mr-2 animate-pulse"></span>

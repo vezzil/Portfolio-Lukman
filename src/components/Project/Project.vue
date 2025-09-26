@@ -1,73 +1,24 @@
 <script setup>
 import ProjectCard from './ProjectCard.vue'
 import { ref, computed } from 'vue'
+import projectsData from '../../dataset/projects.json'
 
-// Helper to load images
-function getImage(filename) {
-  return new URL(`../../assets/images/${filename}`, import.meta.url).href
-}
-
-// Categories
-const categories = [
-  'All',
-  'Full-stack Web',
-  'Full-stack Mobile',
-  'Blockchain / Web3',
-  'Other / Utilities',
-]
-
-// Selected category
+const categories = projectsData.categories
 const selectedCategory = ref('All')
 
-// Projects
-const projects = [
-  {
-    id: 1,
-    title: 'Portfolio Website',
-    description: 'Personal portfolio built with Vue and Tailwind.',
-    technologies: ['Vue.js', 'Tailwind CSS', 'Golang', 'Redis'],
-    category: 'Full-stack Web',
-    liveDemo: 'https://portfolio-website.com',
-    sourceCode: 'https://github.com/vezzil/portfolio-website',
-    image: getImage('portfolio1.PNG'),
-  },
-  {
-    id: 2,
-    title: 'E-commerce Store',
-    description: 'Full-stack e-commerce store with cart & checkout.',
-    technologies: ['Vue.js', 'Tailwind CSS'],
-    category: 'Full-stack Web',
-    liveDemo: '',
-    sourceCode: 'https://github.com/vezzil/ecommerce-store',
-    image: getImage('portfolio2.PNG'),
-  },
-  {
-    id: 3,
-    title: 'Crypto Wallet',
-    description: 'Web3 wallet with Ethers.js integration.',
-    technologies: ['React.js', 'Ethers.js', 'IPFS'],
-    category: 'Blockchain / Web3',
-    liveDemo: '',
-    sourceCode: 'https://github.com/vezzil/crypto-wallet',
-    image: getImage('portfolio3.PNG'),
-  },
-  {
-    id: 4,
-    title: 'Utility Script',
-    description: 'CLI tool to automate backups.',
-    technologies: ['Golang', 'CLI'],
-    category: 'Other / Utilities',
-    liveDemo: '',
-    sourceCode: 'https://github.com/vezzil/backup-script',
-    image: getImage('portfolio4.PNG'),
-  },
-]
+// Compute projects with full image URLs
+const projectsWithImages = computed(() =>
+  projectsData.projects.map(project => ({
+    ...project,
+    image: new URL(`../../assets/images/${project.image}`, import.meta.url).href
+  }))
+)
 
-// Filtered projects
+// Filtered projects based on selected category
 const filteredProjects = computed(() =>
   selectedCategory.value === 'All'
-    ? projects
-    : projects.filter((p) => p.category === selectedCategory.value),
+    ? projectsWithImages.value
+    : projectsWithImages.value.filter(p => p.category === selectedCategory.value)
 )
 </script>
 
@@ -92,7 +43,8 @@ const filteredProjects = computed(() =>
                 : 'bg-slate-700 text-slate-300 hover:bg-indigo-500 hover:text-white',
             ]"
           >
-            {{ cat }}
+            {{ cat
+             }}
           </button>
         </div>
       </div>

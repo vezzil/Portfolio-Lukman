@@ -1,5 +1,6 @@
 <script setup>
 import SocialMedia from './SocialMediaButtons/SocialMedia.vue';
+import socialLinks from '../dataset/socialmedia.json'
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import SocialMedia from './SocialMediaButtons/SocialMedia.vue';
                 <div class="mb-6 md:mb-0">
                     <div class="flex items-center space-x-2">
                         <div class="hexagon bg-gradient-to-r from-indigo-500 to-emerald-500 w-8 h-8 flex items-center justify-center">
-                            <span class="font-bold text-white text-xs">YP</span>
+                            <span class="font-bold text-white text-xs">LH</span>
                         </div>
                         <span class="font-bold">Lukman <span class="gradient-text">Hakim</span></span>
                     </div>
@@ -25,8 +26,13 @@ import SocialMedia from './SocialMediaButtons/SocialMedia.vue';
                 </div>
                 
                 <div class="flex space-x-6">
-                    <SocialMedia url="https://github.com/vezzil/" iconClass="fab fa-github" iconSize=""/>
-                    <SocialMedia url="https://www.linkedin.com/in/lukman-hakim-7085a61b8/" iconClass="fab fa-linkedin" iconSize=""/>
+                    <SocialMedia
+                        v-for="(social, index) in socialLinks"
+                        :key="index"
+                        :url="social.url"
+                        :iconClass="social.iconClass"
+                        :iconSize="social.iconSize"
+                    />
                 </div>
             </div>
             
