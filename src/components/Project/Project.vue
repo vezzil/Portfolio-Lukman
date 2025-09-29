@@ -6,11 +6,14 @@ import projectsData from '../../dataset/projects.json'
 const categories = projectsData.categories
 const selectedCategory = ref('All')
 
-// Compute projects with full image URLs
+// Compute projects with full image URLs (only when image is non-empty)
 const projectsWithImages = computed(() =>
   projectsData.projects.map(project => ({
     ...project,
-    image: new URL(`../../assets/images/${project.image}`, import.meta.url).href
+    image:
+      project.image && project.image.trim() !== ''
+        ? new URL(`../../assets/images/${project.image}`, import.meta.url).href
+        : ''
   }))
 )
 

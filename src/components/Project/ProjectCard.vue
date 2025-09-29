@@ -20,7 +20,7 @@ const techColors = [
     <div class="bg-slate-800 p-6 rounded-md flex flex-col">
       <!-- Thumbnail -->
       <div class="h-48 mb-4 overflow-hidden rounded-md bg-slate-700 flex items-center justify-center">
-        <img v-if="image" :src="image" alt="Project image" class="w-full h-full object-cover" />
+        <img v-if="image && image.trim() !== ''" :src="image" alt="Project image" class="w-full h-full object-cover" />
         <svg v-else class="w-full h-full" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="project1-bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -57,7 +57,7 @@ const techColors = [
 
       <!-- Links -->
       <div class="flex justify-between">
-        <a :href="liveDemo" target="_blank" class="text-indigo-400 hover:text-indigo-300 flex items-center">
+        <a v-if="liveDemo && liveDemo.trim() !== ''" :href="liveDemo" target="_blank" class="text-indigo-400 hover:text-indigo-300 flex items-center">
           <span>Live Demo</span>
           <i class="fas fa-external-link-alt ml-1"></i>
         </a>
