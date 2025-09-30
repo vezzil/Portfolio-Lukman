@@ -32,13 +32,23 @@ const skillDomains = skillsData.skillDomains
                     <h3 class="text-2xl font-bold mb-6">Technologies</h3>
                     
                     <div class="flex flex-wrap gap-3">
-                        <SkillBadge v-for="skillBadge in skillBadges" :key="skillBadge.label" :label="skillBadge.label" :bgColor="skillBadge.bgColor" :textColor="skillBadge.textColor" />
+                        <SkillBadge
+                          v-for="(skillBadge, i) in skillBadges"
+                          :key="skillBadge.label"
+                          :label="skillBadge.label"
+                          :index="i"
+                        />
                     </div>
                     
                     <h3 class="text-2xl font-bold mt-10 mb-6">Area of Expertise</h3>
                     
                     <div class="flex flex-wrap gap-3">
-                        <SkillDomain v-for="skillDomain in skillDomains" :key="skillDomain.label" :label="skillDomain.label" :bgColor="skillDomain.bgColor" :textColor="skillDomain.textColor" />
+                        <SkillDomain
+                          v-for="(skillDomain, i) in skillDomains"
+                          :key="skillDomain.label"
+                          :label="skillDomain.label"
+                          :index="i"
+                        />
                     </div>
                 </div>
             </div>
