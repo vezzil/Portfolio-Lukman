@@ -4,7 +4,8 @@ defineProps({
   description: String,
   technologies: Array,
   liveDemo: String,
-  sourceCode: String,
+  sourceCodeFrontEnd: String,
+  sourceCodeBackEnd: String,
   image: String,
 })
 
@@ -56,15 +57,37 @@ const techColors = [
       </div>
 
       <!-- Links -->
-      <div class="flex justify-between">
-        <a v-if="liveDemo && liveDemo.trim() !== ''" :href="liveDemo" target="_blank" class="text-indigo-400 hover:text-indigo-300 flex items-center">
+      <div class="flex justify-between items-start">
+        <a
+          v-if="liveDemo && liveDemo.trim() !== ''"
+          :href="liveDemo"
+          target="_blank"
+          class="text-indigo-400 hover:text-indigo-300 flex items-center"
+        >
           <span>Live Demo</span>
           <i class="fas fa-external-link-alt ml-1"></i>
         </a>
-        <a :href="sourceCode" target="_blank" class="text-indigo-400 hover:text-indigo-300 flex items-center">
-          <span>Source Code</span>
-          <i class="fab fa-github ml-1"></i>
-        </a>
+
+        <div class="flex flex-col items-end space-y-2 ml-auto">
+          <a
+            v-if="sourceCodeFrontEnd && sourceCodeFrontEnd.trim() !== ''"
+            :href="sourceCodeFrontEnd"
+            target="_blank"
+            class="text-indigo-400 hover:text-indigo-300 flex items-center"
+          >
+            <span>Source Code Frontend</span>
+            <i class="fab fa-github ml-1"></i>
+          </a>
+          <a
+            v-if="sourceCodeBackEnd && sourceCodeBackEnd.trim() !== ''"
+            :href="sourceCodeBackEnd"
+            target="_blank"
+            class="text-indigo-400 hover:text-indigo-300 flex items-center"
+          >
+            <span>Source Code Backend</span>
+            <i class="fab fa-github ml-1"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>

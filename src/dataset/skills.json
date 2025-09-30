@@ -1,134 +1,97 @@
 {
-    "skillBars": [
-      {
-        "title": "Frontend Development",
-        "percentage": 90
-      },
-      {
-        "title": "Backend Development",
-        "percentage": 80
-      },
-      {
-        "title": "DevOps",
-        "percentage": 70
-      },
-      {
-        "title": "Smart Contract Development",
-        "percentage": 85
-      },
-      {
-        "title": "UI/UX Design",
-        "percentage": 75
-      }
-    ],
-    "skillBadges": [
-      {
-        "label": "Vue.js",
-        "bgColor": "bg-indigo-900/50",
-        "textColor": "text-indigo-300"
-      },
-      {
-        "label": "React",
-        "bgColor": "bg-emerald-900/50",
-        "textColor": "text-emerald-300"
-      },
-      {
-        "label": "Solidity",
-        "bgColor": "bg-rose-900/50",
-        "textColor": "text-rose-300"
-      },
-      {
-        "label": "Ethers.js",
-        "bgColor": "bg-indigo-900/50",
-        "textColor": "text-indigo-300"
-      },
-      {
-        "label": "Web3.js",
-        "bgColor": "bg-emerald-900/50",
-        "textColor": "text-emerald-300"
-      },
-      {
-        "label": "Hardhat",
-        "bgColor": "bg-rose-900/50",
-        "textColor": "text-rose-300"
-      },
-      {
-        "label": "Truffle",
-        "bgColor": "bg-indigo-900/50",
-        "textColor": "text-indigo-300"
-      },
-      {
-        "label": "Node.js",
-        "bgColor": "bg-emerald-900/50",
-        "textColor": "text-emerald-300"
-      },
-      {
-        "label": "TypeScript",
-        "bgColor": "bg-rose-900/50",
-        "textColor": "text-rose-300"
-      },
-      {
-        "label": "GraphQL",
-        "bgColor": "bg-indigo-900/50",
-        "textColor": "text-indigo-300"
-      },
-      {
-        "label": "IPFS",
-        "bgColor": "bg-emerald-900/50",
-        "textColor": "text-emerald-300"
-      },
-      {
-        "label": "Docker",
-        "bgColor": "bg-rose-900/50",
-        "textColor": "text-rose-300"
-      },
-      {
-        "label": "Tailwind CSS",
-        "bgColor": "bg-indigo-900/50",
-        "textColor": "text-indigo-300"
-      },
-      {
-        "label": "The Graph",
-        "bgColor": "bg-emerald-900/50",
-        "textColor": "text-emerald-300"
-      },
-      {
-        "label": "Figma",
-        "bgColor": "bg-rose-900/50",
-        "textColor": "text-rose-300"
-      }
-    ],
-    "skillDomains": [
-      {
-        "label": "Decentralized Applications (dApps)",
-        "bgColor": "bg-indigo-900/50",
-        "textColor": "text-indigo-300"
-      },
-      {
-        "label": "Web Development",
-        "bgColor": "bg-emerald-900/50",
-        "textColor": "text-emerald-300"
-      },
-      {
-        "label": "Mobile Development",
-        "bgColor": "bg-rose-900/50",
-        "textColor": "text-rose-300"
-      },
-      {
-        "label": "UI/UX Design",
-        "bgColor": "bg-indigo-900/50",
-        "textColor": "text-indigo-300"
-      },
-      {
-        "label": "Smart Contracts & Blockchain",
-        "bgColor": "bg-emerald-900/50",
-        "textColor": "text-emerald-300"
-      },
-      {
-        "label": "DevOps & Cloud Infrastructure",
-        "bgColor": "bg-rose-900/50",
-        "textColor": "text-rose-300"
-      }
-    ]
-  }
-  
+  "skillBars": [
+    {
+      "title": "Frontend Development",
+      "percentage": 90
+    },
+    {
+      "title": "Backend Development",
+      "percentage": 80
+    },
+    {
+      "title": "DevOps",
+      "percentage": 70
+    },
+    {
+      "title": "Smart Contract Development",
+      "percentage": 85
+    },
+    {
+      "title": "UI/UX Design",
+      "percentage": 75
+    }
+  ],
+  "skillBadges": [
+    { "label": "Golang", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" },
+    { "label": "JavaScript", "bgColor": "bg-emerald-900/50", "textColor": "text-emerald-300" },
+    { "label": "SQL", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" },
+    { "label": "Gin", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" },
+    { "label": "Vue.js", "bgColor": "bg-emerald-900/50", "textColor": "text-emerald-300" },
+    { "label": "Tailwind CSS", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" },
+    { "label": "Bootstrap", "bgColor": "bg-emerald-900/50", "textColor": "text-emerald-300" },
+    { "label": "Node.js", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" },
+    { "label": "TypeScript", "bgColor": "bg-emerald-900/50", "textColor": "text-emerald-300" },
+    { "label": "MySQL", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" },
+    { "label": "PostgreSQL", "bgColor": "bg-emerald-900/50", "textColor": "text-emerald-300" },
+    { "label": "Redis", "bgColor": "bg-rose-900/50", "textColor": "text-rose-300" },
+    { "label": "CI/CD", "bgColor": "bg-emerald-900/50", "textColor": "text-emerald-300" },
+    { "label": "Cronjobs", "bgColor": "bg-rose-900/50", "textColor": "text-rose-300" },
+    { "label": "Swagger", "bgColor": "bg-emerald-900/50", "textColor": "text-emerald-300" },
+    { "label": "JWT", "bgColor": "bg-rose-900/50", "textColor": "text-rose-300" },
+    { "label": "OAuth 2.0", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" },
+    { "label": "OWASP", "bgColor": "bg-emerald-900/50", "textColor": "text-emerald-300" },
+    { "label": "GORM", "bgColor": "bg-rose-900/50", "textColor": "text-rose-300" },
+    { "label": "Go modules", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" },
+    { "label": "Postman", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" },
+    { "label": "Android Studio", "bgColor": "bg-emerald-900/50", "textColor": "text-emerald-300" },
+    { "label": "VS Code", "bgColor": "bg-rose-900/50", "textColor": "text-rose-300" },
+    { "label": "MySQL Workbench", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" },
+    { "label": "FileZilla", "bgColor": "bg-emerald-900/50", "textColor": "text-emerald-300" },
+    { "label": "Ethers.js", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" },
+    { "label": "Web3.js", "bgColor": "bg-emerald-900/50", "textColor": "text-emerald-300" },
+    { "label": "MetaMask", "bgColor": "bg-rose-900/50", "textColor": "text-rose-300" },
+    { "label": "Ethereum", "bgColor": "bg-indigo-900/50", "textColor": "text-indigo-300" }
+  ],
+  "skillDomains": [
+    {
+      "label": "Backend Development (APIs & Microservices)",
+      "bgColor": "bg-indigo-900/50",
+      "textColor": "text-indigo-300"
+    },
+    {
+      "label": "Full-stack Web Development",
+      "bgColor": "bg-emerald-900/50",
+      "textColor": "text-emerald-300"
+    },
+    {
+      "label": "Databases & Caching (MySQL, PostgreSQL, Redis)",
+      "bgColor": "bg-rose-900/50",
+      "textColor": "text-rose-300"
+    },
+    {
+      "label": "Automation & Scheduling (Cronjobs)",
+      "bgColor": "bg-indigo-900/50",
+      "textColor": "text-indigo-300"
+    },
+    {
+      "label": "Frontend Web (Vue)",
+      "bgColor": "bg-emerald-900/50",
+      "textColor": "text-emerald-300"
+    },
+    {
+      "label": "Smart Contracts & Web3",
+      "bgColor": "bg-rose-900/50",
+      "textColor": "text-rose-300"
+    },
+    {
+      "label": "System Design & Performance Optimization",
+      "bgColor": "bg-indigo-900/50",
+      "textColor": "text-indigo-300"
+    },
+    {
+      "label": "Security & Testing (Auth, OWASP, Unit Tests)",
+      "bgColor": "bg-emerald-900/50",
+      "textColor": "text-emerald-300"
+    }
+  ]
+}

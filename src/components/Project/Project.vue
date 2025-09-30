@@ -68,7 +68,8 @@ const filteredProjects = computed(() =>
             :description="project.description"
             :technologies="project.technologies"
             :liveDemo="project.liveDemo"
-            :sourceCode="project.sourceCode"
+            :sourceCodeFrontEnd="project.sourceCodeFrontEnd"
+            :sourceCodeBackEnd="project.sourceCodeBackEnd"
             :image="project.image"
           />
         </div>

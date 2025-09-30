@@ -7,10 +7,10 @@
       "technologies": ["Vue.js", "Tailwind CSS", "Vercel"],
       "category": "Front-End Web",
       "liveDemo": "https://portfolio-lukman-sand.vercel.app/",
-      "sourceCode": "https://github.com/vezzil/portfolio-website",
+      "sourceCodeFrontEnd": "https://github.com/vezzil/portfolio-website",
+      "sourceCodeBackEnd": "",
       "image": "portfolio1.PNG"
     },
-
     {
       "id": 2,
       "title": "Go Boilerplate",
@@ -18,7 +18,8 @@
       "technologies": ["Golang", "Github"],
       "category": "Other / Utilities",
       "liveDemo": "",
-      "sourceCode": "https://github.com/vezzil/boilerplate-golang",
+      "sourceCodeFrontEnd": "",
+      "sourceCodeBackEnd": "https://github.com/vezzil/boilerplate-golang",
       "image": ""
     },
     {
@@ -28,7 +29,41 @@
       "technologies": ["Vue.js", "Github"],
       "category": "Other / Utilities",
       "liveDemo": "",
-      "sourceCode": "https://github.com/vezzil/boilerplate-vue",
+      "sourceCodeFrontEnd": "https://github.com/vezzil/boilerplate-vue",
+      "sourceCodeBackEnd": "",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "title": "E-Commerce (In Progress)",
+      "description": "E-Commerce website with catalog browsing, cart functionality, and Stripe payment integration.",
+      "technologies": ["Vue.js", "Tailwind CSS", "Golang", "MYSQL"],
+      "category": "Full-stack Web",
+      "liveDemo": "",
+      "sourceCodeFrontEnd": "https://github.com/vezzil/boilerplate-vue",
+      "sourceCodeBackEnd": "https://github.com/vezzil/boilerplate-vue",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "title": "Car AutoShop CRM (In Progress)",
+      "description": "CRM system for auto workshops to manage clients, tasks, car service schedules, and generate reports.",
+      "technologies": ["Vue.js", "Tailwind CSS", "Golang", "MySQL"],
+      "category": "Full-stack Web",
+      "liveDemo": "",
+      "sourceCodeFrontEnd": "https://github.com/vezzil/boilerplate-vue",
+      "sourceCodeBackEnd": "https://github.com/vezzil/boilerplate-vue",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "title": "Crypto Wallet Dashboard (In Progress)",
+      "description": "A Web3 dashboard that connects to MetaMask and displays wallet balances, transaction history, and supports simple transfers.",
+      "technologies": ["Vue.js", "Tailwind CSS", "Web3.js", "MetaMask", "Ethereum"],
+      "category": "Blockchain / Web3",
+      "liveDemo": "",
+      "sourceCodeFrontEnd": "",
+      "sourceCodeBackEnd": "",
       "image": ""
     }
   ],

@@ -2,7 +2,6 @@
 import SkillsBar from './SkillsBar.vue'
 import SkillBadge from './SkillBadge.vue'
 import SkillDomain from './SkillDomain.vue'
-
 import skillsData from '../../dataset/skills.json'
 
 const skillBars = skillsData.skillBars
