@@ -40,8 +40,8 @@
       "technologies": ["Vue.js", "Tailwind CSS", "Golang", "MYSQL"],
       "category": "Full-stack Web",
       "liveDemo": "",
-      "sourceCodeFrontEnd": "https://github.com/vezzil/boilerplate-vue",
-      "sourceCodeBackEnd": "https://github.com/vezzil/boilerplate-vue",
+      "sourceCodeFrontEnd": "",
+      "sourceCodeBackEnd": "",
       "image": ""
     },
     {
@@ -51,8 +51,8 @@
       "technologies": ["Vue.js", "Tailwind CSS", "Golang", "MySQL"],
       "category": "Full-stack Web",
       "liveDemo": "",
-      "sourceCodeFrontEnd": "https://github.com/vezzil/boilerplate-vue",
-      "sourceCodeBackEnd": "https://github.com/vezzil/boilerplate-vue",
+      "sourceCodeFrontEnd": "",
+      "sourceCodeBackEnd": "",
       "image": ""
     },
     {
