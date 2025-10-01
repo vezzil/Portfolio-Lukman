@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Portfolio Website",
       "description": "Personal portfolio built with Vue and Tailwind.",
-      "technologies": ["Vue.js", "Tailwind CSS", "Vercel"],
+      "technologies": ["Vue.js", "Tailwind CSS"],
       "category": "Front-End Web",
       "liveDemo": "https://portfolio-lukman-sand.vercel.app/",
       "sourceCodeFrontEnd": "https://github.com/vezzil/portfolio-website",
