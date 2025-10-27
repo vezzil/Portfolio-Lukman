@@ -1,7 +1,7 @@
 {
   "certifications": [
     {
-      "id": 5,
+      "id": 1,
       "name": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
       "issuer": "The Hong Kong University of Science and Technology",
       "issueDate": "2020-11-18",
@@ -11,6 +11,27 @@
       "category": "Web Development",
       "skills": ["Bootstrap", "CSS", "JavaScript", "jQuery", "Node.js", "Responsive Web Design"],
       "image": "bootstrap-coursera.png"
+    },
+    {
+      "id": 2,
+      "name": "Introduction to Data Engineering",
+      "issuer": "IBM",
+      "issueDate": "2025-10-27",
+      "expiryDate": "",
+      "credentialId": "QNS4MEAF7S5V",
+      "verificationUrl": "https://www.coursera.org/account/accomplishments/verify/QNS4MEAF7S5V",
+      "category": "Data & Analytics",
+      "skills": [
+        "Data Engineering",
+        "SQL",
+        "NoSQL",
+        "Data Warehousing",
+        "ETL",
+        "Data Pipelines",
+        "Apache Hadoop",
+        "Data Lakes"
+      ],
+      "image": "ibm-data-engineering.png"
     }
   ],
   "categories": [
