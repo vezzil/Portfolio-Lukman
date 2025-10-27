@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+    class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col"
   >
     <!-- Certificate Badge/Image -->
     <div class="flex justify-center mb-4">
@@ -47,7 +47,7 @@
     </div>
 
     <!-- Skills -->
-    <div class="mb-4">
+    <div class="mb-4 flex-grow">
       <div class="flex flex-wrap justify-center gap-2">
         <span
           v-for="skill in certification.skills"
@@ -65,7 +65,7 @@
     </div>
 
     <!-- Verify Button -->
-    <div class="text-center">
+    <div class="text-center mt-auto">
       <a
         :href="certification.verificationUrl"
         target="_blank"
