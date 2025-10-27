@@ -47,6 +47,18 @@
       "category": "Cybersecurity",
       "skills": ["Network Security", "Risk Management", "Compliance"],
       "image": "comptia-security.png"
+    },
+    {
+      "id": 5,
+      "name": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
+      "issuer": "The Hong Kong University of Science and Technology",
+      "issueDate": "2020-11-18",
+      "expiryDate": "",
+      "credentialId": "VRWT283DCXMP",
+      "verificationUrl": "https://www.coursera.org/account/accomplishments/verify/VRWT283DCXMP",
+      "category": "Web Development",
+      "skills": ["Bootstrap", "CSS", "JavaScript", "jQuery", "Node.js", "Responsive Web Design"],
+      "image": "bootstrap-coursera.png"
     }
   ],
   "categories": [
