@@ -82,6 +82,13 @@ onBeforeUnmount(() => {
           >Skills</a
         >
         <a
+          href="#certifications"
+          class="nav-link"
+          :class="{ 'active-nav': activeSection === 'certifications' }"
+          @click.prevent="scrollToId('#certifications')"
+          >Certifications</a
+        >
+        <a
           href="#contact"
           class="nav-link"
           :class="{ 'active-nav': activeSection === 'contact' }"
@@ -127,6 +134,12 @@ onBeforeUnmount(() => {
           class="py-2 px-4 hover:bg-slate-800 rounded"
           @click.prevent="scrollToId('#skills')"
           >Skills</a
+        >
+        <a
+          href="#certifications"
+          class="py-2 px-4 hover:bg-slate-800 rounded"
+          @click.prevent="scrollToId('#certifications')"
+          >Certifications</a
         >
         <a
           href="#contact"

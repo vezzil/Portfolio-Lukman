@@ -5,6 +5,7 @@ import Hero from './components/Hero.vue'
 import About from './components/About.vue'
 import Project from './components/Project/Project.vue'
 import Skills from './components/Skills/Skills.vue'
+import Certifications from './components/Certifications/Certifications.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 import Background from './components/Background.vue'
@@ -15,14 +16,17 @@ let anchorClickHandler
 onMounted(() => {
   // Fade-in animation observer
   const sections = document.querySelectorAll('.fade-in-hidden')
-  fadeObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in-show')
-        fadeObserver.unobserve(entry.target)
-      }
-    })
-  }, { threshold: 0.1 })
+  fadeObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-show')
+          fadeObserver.unobserve(entry.target)
+        }
+      })
+    },
+    { threshold: 0.1 },
+  )
   sections.forEach((s) => fadeObserver.observe(s))
 
   // Smooth scrolling for all internal anchors
@@ -53,6 +57,7 @@ onBeforeUnmount(() => {
     <About />
     <Project />
     <Skills />
+    <Certifications />
     <Contact />
     <Footer />
   </Background>

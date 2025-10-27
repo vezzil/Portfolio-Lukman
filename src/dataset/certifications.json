@@ -1,0 +1,53 @@
+{
+  "certifications": [
+    {
+      "id": 1,
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "issueDate": "2024-01-15",
+      "expiryDate": "2027-01-15",
+      "credentialId": "AWS-SAA-12345",
+      "verificationUrl": "https://aws.amazon.com/verification",
+      "category": "Cloud Computing",
+      "skills": ["AWS", "Cloud Architecture", "System Design"],
+      "image": "aws-sa.png"
+    },
+    {
+      "id": 2,
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "issuer": "Cloud Native Computing Foundation",
+      "issueDate": "2023-09-20",
+      "expiryDate": "2026-09-20",
+      "credentialId": "CKA-67890",
+      "verificationUrl": "https://training.linuxfoundation.org/certification/verify/",
+      "category": "DevOps",
+      "skills": ["Kubernetes", "Container Orchestration", "DevOps"],
+      "image": "cka.png"
+    },
+    {
+      "id": 3,
+      "name": "Google Cloud Professional Developer",
+      "issuer": "Google Cloud",
+      "issueDate": "2023-06-10",
+      "expiryDate": "2025-06-10",
+      "credentialId": "GCP-DEV-54321",
+      "verificationUrl": "https://cloud.google.com/certification/",
+      "category": "Cloud Computing",
+      "skills": ["Google Cloud Platform", "App Development", "APIs"],
+      "image": "gcp-dev.png"
+    },
+    {
+      "id": 4,
+      "name": "CompTIA Security+",
+      "issuer": "CompTIA",
+      "issueDate": "2023-03-15",
+      "expiryDate": "2026-03-15",
+      "credentialId": "COMP-SEC-98765",
+      "verificationUrl": "https://www.certmetrics.com/comptia/",
+      "category": "Cybersecurity",
+      "skills": ["Network Security", "Risk Management", "Compliance"],
+      "image": "comptia-security.png"
+    }
+  ],
+  "categories": ["All", "Cloud Computing", "DevOps", "Cybersecurity", "Web Development"]
+}
