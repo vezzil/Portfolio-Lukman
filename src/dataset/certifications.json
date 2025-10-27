@@ -49,5 +49,12 @@
       "image": "comptia-security.png"
     }
   ],
-  "categories": ["All", "Cloud Computing", "DevOps", "Cybersecurity", "Web Development"]
+  "categories": [
+    "All",
+    "Cloud Computing",
+    "DevOps",
+    "Cybersecurity",
+    "Web Development",
+    "Data & Analytics"
+  ]
 }
