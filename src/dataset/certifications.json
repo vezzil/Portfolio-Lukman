@@ -55,6 +55,28 @@
         "Jupyter Notebooks"
       ],
       "image": "ibm-python-data-engineering.png"
+    },
+    {
+      "id": 4,
+      "name": "Introduction to Relational Databases (RDBMS)",
+      "issuer": "IBM",
+      "program": "IBM Data Engineering",
+      "issueDate": "2025-10-28",
+      "expiryDate": "",
+      "credentialId": "DVN1DH9MBDJ3",
+      "verificationUrl": "https://www.coursera.org/account/accomplishments/verify/DVN1DH9MBDJ3",
+      "category": "Data & Analytics",
+      "skills": [
+        "SQL",
+        "Database Design",
+        "Relational Databases",
+        "Data Modeling",
+        "MySQL",
+        "PostgreSQL",
+        "IBM DB2",
+        "Database Management Systems"
+      ],
+      "image": "ibm-rdbms.png"
     }
   ],
   "categories": [
