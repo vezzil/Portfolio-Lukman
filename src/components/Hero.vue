@@ -1,13 +1,11 @@
 <script setup>
-import SocialMedia from './SocialMediaButtons/SocialMedia.vue';
+import SocialMedia from './SocialMediaButtons/SocialMedia.vue'
 import heroData from '../dataset/hero.json'
 import socialLinks from '../dataset/socialmedia.json'
 
 const heroTitle = heroData.title
 const heroDescription = heroData.description
-
 </script>
-
 
 <template>
   <!-- Hero Section -->
@@ -50,14 +48,16 @@ const heroDescription = heroData.description
           <div class="relative">
             <div class="gradient-border p-1 rounded-full">
               <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden">
-                <img 
-                  src="/profilepic.png" 
-                  alt="Profile Picture" 
+                <img
+                  src="/src/assets/images/profilepic.png"
+                  alt="Profile Picture"
                   class="w-full h-full object-cover rounded-full"
                 />
               </div>
             </div>
-            <div class="absolute -bottom-4 -right-4 bg-slate-900 px-4 py-2 rounded-full border border-slate-700">
+            <div
+              class="absolute -bottom-4 -right-4 bg-slate-900 px-4 py-2 rounded-full border border-slate-700"
+            >
               <span class="flex items-center">
                 <span class="h-3 w-3 bg-green-500 rounded-full mr-2 animate-pulse"></span>
                 Available for work
