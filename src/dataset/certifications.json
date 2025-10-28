@@ -77,6 +77,32 @@
         "Database Management Systems"
       ],
       "image": "ibm-rdbms.png"
+    },
+    {
+      "id": 5,
+      "name": "Databases and SQL for Data Science with Python",
+      "issuer": "IBM",
+      "program": "IBM Data Science",
+      "issueDate": "2025-10-28",
+      "expiryDate": "",
+      "credentialId": "JEFUIC3EW7AS",
+      "verificationUrl": "https://www.coursera.org/account/accomplishments/verify/JEFUIC3EW7AS",
+      "category": "Data & Analytics",
+      "skills": [
+        "SQL",
+        "Python Programming",
+        "Databases",
+        "Relational Databases",
+        "Data Analysis",
+        "Pandas (Python Package)",
+        "Data Manipulation",
+        "Query Languages",
+        "Jupyter",
+        "Transaction Processing",
+        "Stored Procedure",
+        "View"
+      ],
+      "image": "ibm-sql-python.png"
     }
   ],
   "categories": [
