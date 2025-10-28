@@ -103,6 +103,31 @@
         "View"
       ],
       "image": "ibm-sql-python.png"
+    },
+    {
+      "id": 6,
+      "name": "Google Data Analytics Certificate",
+      "issuer": "Google Career Certificates",
+      "issueDate": "2025-10-28",
+      "expiryDate": "",
+      "credentialId": "rUH3AlDP",
+      "verificationUrl": "https://www.credly.com/go/rUH3AlDP",
+      "category": "Data & Analytics",
+      "skills": [
+        "Data Analytics",
+        "Data Aggregation",
+        "Data Calculations",
+        "Data Cleaning",
+        "Data Ethics",
+        "Data Visualization",
+        "Presentations",
+        "Problem Solving",
+        "R",
+        "Spreadsheets",
+        "SQL",
+        "Structured Thinking"
+      ],
+      "image": "google-data-analytics.png"
     }
   ],
   "categories": [
