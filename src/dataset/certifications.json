@@ -32,6 +32,27 @@
         "Data Lakes"
       ],
       "image": "ibm-data-engineering.png"
+    },
+    {
+      "id": 3,
+      "name": "Python Project for Data Engineering",
+      "issuer": "IBM",
+      "issueDate": "2025-10-28",
+      "expiryDate": "",
+      "credentialId": "8LTHM6FL67JD",
+      "verificationUrl": "https://www.coursera.org/account/accomplishments/verify/8LTHM6FL67JD",
+      "category": "Data & Analytics",
+      "skills": [
+        "Python",
+        "Web Scraping",
+        "APIs",
+        "ETL",
+        "Data Manipulation",
+        "SQL",
+        "Unit Testing",
+        "Jupyter Notebooks"
+      ],
+      "image": "ibm-python-data-engineering.png"
     }
   ],
   "categories": [
