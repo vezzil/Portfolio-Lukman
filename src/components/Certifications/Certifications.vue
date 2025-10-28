@@ -16,7 +16,7 @@
       </div>
 
       <!-- Category Filter -->
-      <div class="flex flex-wrap justify-center gap-3 mb-12">
+      <div class="flex flex-wrap justify-center gap-3 mb-8">
         <button
           v-for="category in certificationData.categories"
           :key="category"
@@ -32,14 +32,78 @@
         </button>
       </div>
 
-      <!-- Certifications Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <!-- View Toggle -->
+      <div class="flex justify-center mb-8">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-1 shadow-md">
+          <button
+            @click="groupByProgram = false"
+            :class="[
+              'px-4 py-2 rounded-md transition-all duration-300 font-medium',
+              !groupByProgram
+                ? 'bg-blue-500 text-white shadow-sm'
+                : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700',
+            ]"
+          >
+            Grid View
+          </button>
+          <button
+            @click="groupByProgram = true"
+            :class="[
+              'px-4 py-2 rounded-md transition-all duration-300 font-medium',
+              groupByProgram
+                ? 'bg-blue-500 text-white shadow-sm'
+                : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700',
+            ]"
+          >
+            Program View
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid View -->
+      <div
+        v-if="!groupByProgram"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+      >
         <div
           v-for="certification in filteredCertifications"
           :key="certification.id"
           class="certification-card"
         >
           <CertificationCard :certification="certification" />
+        </div>
+      </div>
+
+      <!-- Program Grouped View -->
+      <div v-else class="space-y-12">
+        <div
+          v-for="(certs, program) in groupedCertifications"
+          :key="program"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6"
+        >
+          <!-- Program Header -->
+          <div class="flex items-center mb-6">
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mr-4"
+            >
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white">{{ program }}</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                {{ certs.length }} certification{{ certs.length > 1 ? 's' : '' }}
+              </p>
+            </div>
+          </div>
+
+          <!-- Certifications in this program -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div v-for="certification in certs" :key="certification.id" class="certification-card">
+              <CertificationCard :certification="certification" />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -97,6 +161,7 @@ import certificationsData from '../../dataset/certifications.json'
 
 const certificationData = ref(certificationsData)
 const selectedCategory = ref('All')
+const groupByProgram = ref(false)
 
 const filteredCertifications = computed(() => {
   if (selectedCategory.value === 'All') {
@@ -105,6 +170,20 @@ const filteredCertifications = computed(() => {
   return certificationData.value.certifications.filter(
     (cert) => cert.category === selectedCategory.value,
   )
+})
+
+const groupedCertifications = computed(() => {
+  if (!groupByProgram.value) return null
+
+  const groups = {}
+  filteredCertifications.value.forEach((cert) => {
+    const programName = cert.program || 'Other Certifications'
+    if (!groups[programName]) {
+      groups[programName] = []
+    }
+    groups[programName].push(cert)
+  })
+  return groups
 })
 
 const activeCertifications = computed(() => {

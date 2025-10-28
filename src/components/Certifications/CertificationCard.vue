@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col"
+    class="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col"
   >
     <!-- Certificate Badge/Image -->
     <div class="flex justify-center mb-4">
@@ -21,6 +21,15 @@
     <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2 text-center">
       {{ certification.name }}
     </h3>
+
+    <!-- Program Badge (if exists) -->
+    <div v-if="certification.program" class="flex justify-center mb-2">
+      <span
+        class="px-3 py-1 bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900 dark:to-blue-900 text-green-800 dark:text-green-200 text-xs rounded-full font-medium border border-green-200 dark:border-green-700"
+      >
+        📚 {{ certification.program }}
+      </span>
+    </div>
 
     <!-- Issuer -->
     <p class="text-lg text-blue-600 dark:text-blue-400 font-semibold text-center mb-3">
