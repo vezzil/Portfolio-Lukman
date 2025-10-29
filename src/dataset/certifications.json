@@ -80,6 +80,28 @@
     },
     {
       "id": 5,
+      "name": "Relational Database Administration (DBA)",
+      "issuer": "IBM",
+      "program": "IBM Data Engineering",
+      "issueDate": "2025-10-29",
+      "expiryDate": "",
+      "credentialId": "AWXSZQVEGC61",
+      "verificationUrl": "https://www.coursera.org/account/accomplishments/verify/AWXSZQVEGC61",
+      "category": "Data & Analytics",
+      "skills": [
+        "Database Administration",
+        "PostgreSQL",
+        "IBM DB2",
+        "Performance Tuning",
+        "Database Management",
+        "Disaster Recovery",
+        "Database Design",
+        "User Accounts"
+      ],
+      "image": "ibm-dba.png"
+    },
+    {
+      "id": 6,
       "name": "Databases and SQL for Data Science with Python",
       "issuer": "IBM",
       "program": "IBM Data Engineering",
@@ -105,7 +127,7 @@
       "image": "ibm-sql-python.png"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Google Data Analytics Certificate",
       "issuer": "Google Career Certificates",
       "issueDate": "2025-10-28",
