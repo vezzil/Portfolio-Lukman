@@ -102,6 +102,29 @@
     },
     {
       "id": 6,
+      "name": "ETL and Data Pipelines with Shell, Airflow and Kafka",
+      "issuer": "IBM",
+      "program": "IBM Data Engineering",
+      "issueDate": "2025-10-29",
+      "expiryDate": "",
+      "credentialId": "RKRIMBDXF8Z9",
+      "verificationUrl": "https://www.coursera.org/account/accomplishments/verify/RKRIMBDXF8Z9",
+      "category": "Data & Analytics",
+      "skills": [
+        "ETL",
+        "Data Pipelines",
+        "Apache Kafka",
+        "Apache Airflow",
+        "Shell Script",
+        "Data Processing",
+        "Data Warehousing",
+        "Web Scraping",
+        "Data Migration"
+      ],
+      "image": "ibm-etl-pipelines.png"
+    },
+    {
+      "id": 7,
       "name": "Databases and SQL for Data Science with Python",
       "issuer": "IBM",
       "program": "IBM Data Engineering",
@@ -127,7 +150,7 @@
       "image": "ibm-sql-python.png"
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Google Data Analytics Certificate",
       "issuer": "Google Career Certificates",
       "issueDate": "2025-10-28",
