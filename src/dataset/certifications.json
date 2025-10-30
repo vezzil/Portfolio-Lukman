@@ -199,6 +199,30 @@
         "IBM DB2"
       ],
       "image": "ibm-data-warehouse.png"
+    },
+    {
+      "id": 10,
+      "name": "BI Dashboards with IBM Cognos Analytics and Google Looker",
+      "issuer": "IBM",
+      "program": "IBM Data Engineering",
+      "issueDate": "2025-10-31",
+      "expiryDate": "",
+      "credentialId": "W2SXRRHMA5LJ",
+      "verificationUrl": "https://www.coursera.org/account/accomplishments/verify/W2SXRRHMA5LJ",
+      "category": "Data & Analytics",
+      "skills": [
+        "Analytics",
+        "Data Presentation",
+        "IBM Cognos Analytics",
+        "Business Intelligence Software",
+        "Interactive Data Visualization",
+        "Looker (Software)",
+        "Data Visualization",
+        "Business Intelligence",
+        "Dashboard",
+        "Data Visualization Software"
+      ],
+      "image": "ibm-bi-dashboards.png"
     }
   ],
   "categories": [
