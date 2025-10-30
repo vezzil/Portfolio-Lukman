@@ -173,6 +173,32 @@
         "Structured Thinking"
       ],
       "image": "google-data-analytics.png"
+    },
+    {
+      "id": 9,
+      "name": "Data Warehouse Fundamentals",
+      "issuer": "IBM",
+      "program": "IBM Data Engineering",
+      "issueDate": "2025-10-30",
+      "expiryDate": "",
+      "credentialId": "H59ZL622FLPD",
+      "verificationUrl": "https://www.coursera.org/account/accomplishments/verify/H59ZL622FLPD",
+      "category": "Data & Analytics",
+      "skills": [
+        "Data Validation",
+        "Query Languages",
+        "Data Warehousing",
+        "Data Architecture",
+        "Extract, Transform, Load",
+        "SQL",
+        "Star Schema",
+        "Data Cleansing",
+        "Database Design",
+        "Data Mart",
+        "Data Quality",
+        "IBM DB2"
+      ],
+      "image": "ibm-data-warehouse.png"
     }
   ],
   "categories": [
