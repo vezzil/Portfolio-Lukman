@@ -223,6 +223,30 @@
         "Data Visualization Software"
       ],
       "image": "ibm-bi-dashboards.png"
+    },
+    {
+      "id": 11,
+      "name": "Introduction to NoSQL Databases",
+      "issuer": "IBM",
+      "program": "IBM Data Engineering",
+      "issueDate": "2025-10-31",
+      "expiryDate": "",
+      "credentialId": "LQZ1FPMAV7CD",
+      "verificationUrl": "https://www.coursera.org/account/accomplishments/verify/LQZ1FPMAV7CD",
+      "category": "Data & Analytics",
+      "skills": [
+        "NoSQL",
+        "MongoDB",
+        "Apache Cassandra",
+        "Database Management",
+        "Database Architecture",
+        "Data Modeling",
+        "Data Manipulation",
+        "JSON",
+        "Distributed Computing",
+        "Scalability"
+      ],
+      "image": "ibm-nosql.png"
     }
   ],
   "categories": [
