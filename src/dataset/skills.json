@@ -1,65 +1,82 @@
 {
   "skillBars": [
     {
-      "title": "Frontend Development",
+      "title": "Backend Development",
       "percentage": 90
     },
     {
-      "title": "Backend Development",
-      "percentage": 80
+      "title": "Frontend Development",
+      "percentage": 85
     },
     {
-      "title": "System Design",
-      "percentage": 80
+      "title": "System Design & Optimization",
+      "percentage": 85
     },
     {
       "title": "Databases & Caching",
       "percentage": 85
     },
     {
-      "title": "UI/UX Design",
-      "percentage": 75
+      "title": "Data Engineering & Analytics",
+      "percentage": 80
     }
   ],
   "skillBadges": [
     { "label": "Golang" },
     { "label": "JavaScript" },
+    { "label": "Python" },
     { "label": "SQL" },
+    { "label": "PHP" },
+    { "label": "C++" },
     { "label": "Gin" },
     { "label": "Vue.js" },
+    { "label": "React.js" },
     { "label": "Tailwind CSS" },
     { "label": "Bootstrap" },
     { "label": "Node.js" },
-    { "label": "TypeScript" },
+    { "label": "Flutter" },
     { "label": "MySQL" },
     { "label": "PostgreSQL" },
     { "label": "Redis" },
+    { "label": "IBM DB2" },
+    { "label": "ETL/ELT" },
+    { "label": "Data Pipelines" },
+    { "label": "Apache Kafka" },
+    { "label": "Apache Airflow" },
+    { "label": "Data Warehousing" },
+    { "label": "Data Modeling" },
+    { "label": "IBM Cognos Analytics" },
+    { "label": "Google Looker" },
+    { "label": "Jupyter Notebooks" },
+    { "label": "Pandas" },
+    { "label": "R Programming" },
     { "label": "CI/CD" },
-    { "label": "Cronjobs" },
+    { "label": "CronJobs" },
+    { "label": "Ubuntu" },
+    { "label": "Jenkins" },
+    { "label": "Docker" },
     { "label": "Swagger" },
     { "label": "JWT" },
     { "label": "OAuth 2.0" },
     { "label": "OWASP" },
     { "label": "GORM" },
-    { "label": "Go modules" },
+    { "label": "Go Modules" },
     { "label": "Postman" },
     { "label": "Android Studio" },
     { "label": "VS Code" },
     { "label": "MySQL Workbench" },
-    { "label": "FileZilla" },
-    { "label": "Ethers.js" },
-    { "label": "Web3.js" },
-    { "label": "MetaMask" },
-    { "label": "Ethereum" }
+    { "label": "FileZilla" }
   ],
   "skillDomains": [
     { "label": "Backend Development (APIs & Microservices)" },
     { "label": "Full-stack Web Development" },
-    { "label": "Databases & Caching (MySQL, PostgreSQL, Redis)" },
-    { "label": "Automation & Scheduling (Cronjobs)" },
-    { "label": "Frontend Web (Vue)" },
-    { "label": "Smart Contracts & Web3" },
+    { "label": "Data Engineering & ETL Pipelines" },
+    { "label": "Data Analytics & Business Intelligence" },
+    { "label": "Databases & Caching (MySQL, PostgreSQL, Redis, IBM DB2)" },
     { "label": "System Design & Performance Optimization" },
-    { "label": "Security & Testing (Auth, OWASP, Unit Tests)" }
+    { "label": "Data Warehousing & Data Modeling" },
+    { "label": "Automation & Scheduling (CronJobs)" },
+    { "label": "Security & Testing (Auth, OWASP, Unit Tests)" },
+    { "label": "DevOps & CI/CD" }
   ]
 }
