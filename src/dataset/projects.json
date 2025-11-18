@@ -43,6 +43,17 @@
       "sourceCodeFrontEnd": "",
       "sourceCodeBackEnd": "",
       "image": ""
+    },
+    {
+      "id": 5,
+      "title": "E-Commerce Platform",
+      "description": "Full-featured e-commerce platform with product management, shopping cart, secure payment integration, and order tracking.",
+      "technologies": ["React.js", "Golang", "MySQL", "Redis", "Stripe API", "AWS S3"],
+      "category": "Full-stack Web",
+      "liveDemo": "",
+      "sourceCodeFrontEnd": "Available upon request",
+      "sourceCodeBackEnd": "Available upon request",
+      "image": "ecommerce.png"
     }
   ],
   "categories": ["All", "Front-End Web", "Full-stack Web", "Blockchain / Web3", "Other / Utilities"]

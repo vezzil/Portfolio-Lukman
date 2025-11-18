@@ -17,11 +17,18 @@ const techColors = [
 </script>
 
 <template>
-  <div class="project-card gradient-border p-1">
-    <div class="bg-slate-800 p-6 rounded-md flex flex-col">
+  <div class="project-card gradient-border p-1 h-full">
+    <div class="bg-slate-800 p-6 rounded-md flex flex-col h-full">
       <!-- Thumbnail -->
-      <div class="h-48 mb-4 overflow-hidden rounded-md bg-slate-700 flex items-center justify-center">
-        <img v-if="image && image.trim() !== ''" :src="image" alt="Project image" class="w-full h-full object-cover" />
+      <div
+        class="h-48 mb-4 overflow-hidden rounded-md bg-slate-700 flex items-center justify-center"
+      >
+        <img
+          v-if="image && image.trim() !== ''"
+          :src="image"
+          alt="Project image"
+          class="w-full h-full object-cover"
+        />
         <svg v-else class="w-full h-full" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="project1-bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -33,7 +40,15 @@ const techColors = [
           <circle cx="300" cy="50" r="30" fill="#6366f1" opacity="0.3" />
           <circle cx="350" cy="150" r="20" fill="#10b981" opacity="0.3" />
           <path d="M50,100 Q200,50 350,100" stroke="#6366f1" stroke-width="3" fill="none" />
-          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold">
+          <text
+            x="50%"
+            y="50%"
+            dominant-baseline="middle"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-size="24"
+            font-weight="bold"
+          >
             {{ title }}
           </text>
         </svg>
@@ -57,7 +72,7 @@ const techColors = [
       </div>
 
       <!-- Links -->
-      <div class="flex justify-between items-start">
+      <div class="flex justify-between items-start mt-auto">
         <a
           v-if="liveDemo && liveDemo.trim() !== ''"
           :href="liveDemo"
@@ -71,15 +86,30 @@ const techColors = [
         <div class="flex flex-col items-end space-y-2 ml-auto">
           <a
             v-if="sourceCodeFrontEnd && sourceCodeFrontEnd.trim() !== ''"
-            :href="sourceCodeFrontEnd"
-            target="_blank"
-            class="text-indigo-400 hover:text-indigo-300 flex items-center"
+            :href="sourceCodeFrontEnd === 'Available upon request' ? undefined : sourceCodeFrontEnd"
+            :target="sourceCodeFrontEnd === 'Available upon request' ? undefined : '_blank'"
+            :class="
+              sourceCodeFrontEnd === 'Available upon request'
+                ? 'text-slate-400 flex items-center cursor-default'
+                : 'text-indigo-400 hover:text-indigo-300 flex items-center'
+            "
           >
-            <span>Source Code Frontend</span>
-            <i class="fab fa-github ml-1"></i>
+            <span>{{
+              sourceCodeFrontEnd === 'Available upon request'
+                ? 'Source Code: Available upon request'
+                : 'Source Code Frontend'
+            }}</span>
+            <i
+              v-if="sourceCodeFrontEnd !== 'Available upon request'"
+              class="fab fa-github ml-1"
+            ></i>
           </a>
           <a
-            v-if="sourceCodeBackEnd && sourceCodeBackEnd.trim() !== ''"
+            v-if="
+              sourceCodeBackEnd &&
+              sourceCodeBackEnd.trim() !== '' &&
+              sourceCodeBackEnd !== 'Available upon request'
+            "
             :href="sourceCodeBackEnd"
             target="_blank"
             class="text-indigo-400 hover:text-indigo-300 flex items-center"
