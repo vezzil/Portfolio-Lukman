@@ -21,13 +21,13 @@ const techColors = [
     <div class="bg-slate-800 p-6 rounded-md flex flex-col h-full">
       <!-- Thumbnail -->
       <div
-        class="h-48 mb-4 overflow-hidden rounded-md bg-slate-700 flex items-center justify-center"
+        class="h-64 md:h-72 mb-4 overflow-hidden rounded-md bg-slate-700 flex items-center justify-center p-2"
       >
         <img
           v-if="image && image.trim() !== ''"
           :src="image"
           alt="Project image"
-          class="w-full h-full object-cover"
+          class="w-full h-full object-contain"
         />
         <svg v-else class="w-full h-full" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
           <defs>
