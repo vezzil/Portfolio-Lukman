@@ -54,6 +54,28 @@
       "sourceCodeFrontEnd": "Available upon request",
       "sourceCodeBackEnd": "Available upon request",
       "image": "ecommerce.png"
+    },
+    {
+      "id": 6,
+      "title": "Corporate Website - Tech Company",
+      "description": "Modern corporate website with responsive design, showcasing company services, portfolio, and contact information.",
+      "technologies": ["Vue.js", "Tailwind CSS"],
+      "category": "Front-End Web",
+      "liveDemo": "",
+      "sourceCodeFrontEnd": "Available upon request",
+      "sourceCodeBackEnd": "",
+      "image": "corporatewebsite1.gif"
+    },
+    {
+      "id": 7,
+      "title": "Corporate Website - Agency",
+      "description": "Professional agency website featuring service offerings, team profiles, and interactive client testimonials.",
+      "technologies": ["Vue.js", "Tailwind CSS"],
+      "category": "Front-End Web",
+      "liveDemo": "",
+      "sourceCodeFrontEnd": "Available upon request",
+      "sourceCodeBackEnd": "",
+      "image": "corporatewebsite2.gif"
     }
   ],
   "categories": ["All", "Front-End Web", "Full-stack Web", "Blockchain / Web3", "Other / Utilities"]
